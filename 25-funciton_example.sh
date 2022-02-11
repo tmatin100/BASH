@@ -8,14 +8,14 @@ usage(){
     echo "usage: $0 file_name"
 }
 
-# we can get 1 if the file exists , and 0 if it doesnt 
+# we are createing a funciton to to chcek the file with the -f flag,  using a local variable named file 
+
 is_file_exist(){
     local file="$1"
-    [[ -f "$file" ]] && return 0 || return 1 
-}
+    [[ -f "$file" ]] && return 0 || return 1   # if its true return 1 if not return 0
 
 # if the total number of aurgument is equal to 0 then execute the usage fucntion 
-[[ $# -eq 0  ]] && usage 
+[[ $# -eq 0 ]] && usage 
 
 if ( is_file_exist "$1" )
 then
