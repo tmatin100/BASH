@@ -30,7 +30,7 @@ hello
 echo "----------------------------------------readonly variables------------------------------------------------------------------------"
 readonly 
 
-#list all the read only varuabkes 
+#list all the read only variables 
 readonly -p
 
 #list of read only functions
